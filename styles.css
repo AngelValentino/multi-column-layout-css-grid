@@ -62,10 +62,6 @@ header h1 {
     transition: transform 0.4s;
 }
 
-.grid-container img:hover {
-    transform: scale(1.2);
-}
-
 .grid-container h2, .grid-container h3 {
     margin: 20px 0;
 }
@@ -83,6 +79,18 @@ header h1 {
     border-bottom: 1px solid rgb(187, 199, 199);
     padding: 0 0 40px;
 }
+
+/*MEDIA QUERY FOR ONLY HOVER CAPABLE DEVICES*/
+
+@media screen and (hover: hover) {
+/*MAIN*/
+
+    .grid-container img:hover {
+        transform: scale(1.2);
+    }
+}
+
+/*END OF MEDIA QUERY FOR ONLY HOVER CAPABLE DEVICES*/
 
 @media only screen and (max-width: 980px) {
     .grid-container article {
